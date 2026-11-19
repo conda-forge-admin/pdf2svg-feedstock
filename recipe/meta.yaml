@@ -17,13 +17,12 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
-    - {{ stdlib("c") }}
     - make
     - m4
     - autoconf
     - automake
     - libtool
-    - pkg-config
+    - pkgconf
   host:
     - poppler
     - cairo
