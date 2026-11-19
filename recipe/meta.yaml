@@ -10,20 +10,19 @@ source:
   sha256: fd765256f18b5890639e93cabdf631b640966ed1ea9ebd561aede9d3be2155e4
 
 build:
-  number: 6
+  number: 7
   skip: True  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
-    - {{ stdlib("c") }}
     - make
     - m4
     - autoconf
     - automake
     - libtool
-    - pkg-config
+    - pkgconf
   host:
     - poppler
     - cairo
